@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Milan adictos Juego</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="cabecera">
+        <img src="imagenes/logo.png" class="img-responsive" />
+        <nav id="menu">
+          <ul id="menu-ul">
+            <li>Hola elpiedra83</li>
+            <li>
+              <a href="bases.php" target="_blank"
+                >bases del juego</a
+              >
+            </li>
+            <li>
+                <a href="salir.php">cerrar sesion</a>
+              </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="proximo" id="proximo">
+        <span>Próximo partido</span>
+        <span>AC MILAN VS AS ROMA</span>
+      </div>
+      <form
+        name="form"
+        id="frontal"
+        class="frontal"
+        method="post"
+        action="panel.php"
+      >
+        <div id="primero">
+          <span>MARCADOR</span>>
+          <label>MILAN</label>
+          <input
+            type="number"
+            name="marcador1"
+            autocomplete="off"
+            size="4"
+            placeholder="número"
+            class="form-control"
+          />
+          <label>RIVAL</label>
+          <input
+            type="number"
+            name="marcador2"
+            autocomplete="off"
+            size="4"
+            placeholder="número"
+            class="form-control"
+          />
+        </div>
+        <div id="segundo">
+          <span>GOLEADORES</span>
+          <select name="goleador1" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="Ninguno">Ninguno</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+
+          <select name="goleador2" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="Ninguno">Ninguno</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+
+          <select name="goleador3" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="Ninguno">Ninguno</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+        </div>
+        <div id="tercero">
+          <span>ASISTENCIAS</span>
+          <select name="asistidor1" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="Ninguno">Ninguno</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+
+          <select name="asistidor2" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="Ninguno">Ninguno</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+        </div>
+        <div id="cuarto">
+          <span>TARJETAS</span>
+          <select name="tarjeta1" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="Ninguno">Ninguno</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+
+          <select name="tarjeta2" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="Ninguno">Ninguno</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+        </div>
+        <div id="quinto">
+          <span>JUGADORES</span>
+          <select name="j1" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+
+          <select name="j2" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+
+          <select name="j3" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+
+          <select name="j4" class="form-control">
+            <option value="opcion" selected="">opcion</option>
+            <option value="G.Donnarumma">G.Donnarumma</option>
+            <option value="A.Donnarumma">A.Donnarumma</option>
+            <option value="C.Tatarusanu">C.Tatarusanu</option>
+            <option value="A.Romagnoli">A.Romagnoli</option>
+            <option value="M.Musacchio">M.Musacchio</option>
+            <option value="S.Kjaer">S.Kjaer</option>
+            <option value="L.Duarte">L.Duarte</option>
+            <option value="M.Gabbia">M.Gabbia</option>
+            <option value="G.Bellodi">G.Bellodi</option>
+            <option value="T.Hernandez">T.Hernandez</option>
+            <option value="D.Laxalt">D.Laxalt</option>
+            <option value="D.Calabria">D.Calabria</option>
+            <option value="A.Conti">A.Conti</option>
+            <option value="P.Kalulu">P.Kalulu</option>
+            <option value="S.Tonali">S.Tonali</option>
+            <option value="I.Bennacer">I.Bennacer</option>
+            <option value="F.Kessie">F.Kessie</option>
+            <option value="R.Krunic">R.Krunic</option>
+            <option value="T.Pobega">T.Pobega</option>
+            <option value="H.Calhanoglu">H.Calhanoglu</option>
+            <option value="J.Hauge">J.Hauge</option>
+            <option value="B.Diaz">B.Diaz</option>
+            <option value="A.Hailalovic">A.Hailalovic</option>
+            <option value="D.Maldini">D.Maldini</option>
+            <option value="A.Rebic">A.Rebic</option>
+            <option value="S.Castillejo">S.Castillejo</option>
+            <option value="A.Salemaekers">A.Salemaekers</option>
+            <option value="R.Leao">R.Leao</option>
+            <option value="Z.Ibrahimovic">Z.Ibrahimovic</option>
+            <option value="L.Colombo">L.Colombo</option>
+          </select>
+        </div>
+        <div id="sexto">
+          <input
+            type="submit"
+            name="guardar"
+            value="GUARDAR"
+            class="form-control"
+          />
+        </div>
+      </form>
+      <div id="septimo">
+        <span>Mis apuestas</span>
+        <span>MILAN: 2</span>
+        <span>RIVAL: 1</span>
+        <span>primer goleador: Z.Ibrahimovic</span>
+        <span>segundo goleador: T.Hernandez</span>
+        <span>tercer goleador B.Diaz</span>
+        <span>Asistidores: A.Salemaekers<br />Z.Ibrahimovic</span>
+        <span>jugadores amonestados: I.Bennacer<br />Z.Ibrahimovic</span>
+        <span
+          >Jugadores:Z.Ibrahimovic<br />G.Donnarumma<br />F.Kessie<br />A.Salemaekers<br
+        /></span>
+        <span>PUNTOS</span>
+        0
+      </div>
+    </div>
+  </body>
+</html>
